@@ -64,6 +64,7 @@ class HttpRequest {
         url = this.baseUrl + url;
 
         console.log(url);
+        console.log(data);
         let request = axios({
             method,
             url,

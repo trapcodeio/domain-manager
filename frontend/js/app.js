@@ -1,19 +1,10 @@
 import Layout from '../vues/Layout';
 
-let Vue = window.Vue;
+// For AutoComplete Sake
+const Vue = window.Vue;
 
-// Vue.use(VueTrapPack);
-
-let Main = {
-    vtp: {
-        fetch: {
-            route: 'index',
-            data: {foo: 'bar'}
-        }
-    },
+const Main = {
     render: h => h(Layout)
 };
-
-Main = useVTP(Main);
 
 new Vue(Main).$mount('#app');

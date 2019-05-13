@@ -14,6 +14,14 @@ const VueTrapPack = {
 
 };
 
+/**
+ * Use VTP
+ * @function
+ *
+ * @param $component
+ * @param [$options]
+ * @return {*}
+ */
 const useVTP = function ($component, $options = {}) {
     /*
     * Use $component['vtp'] as $options if exists
