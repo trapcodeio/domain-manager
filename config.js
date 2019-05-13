@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 module.exports = {
-    name: 'Xjs',
+    name: 'DomainManager',
     env: 'development',
     debug: {
         enabled: true

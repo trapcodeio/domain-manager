@@ -1,27 +1,33 @@
-<form class="mb-3" method="post" action="<%= route('auth.register') %>">
-    <div class="form-group">
-        <label for="join-email">Email:</label>
-        <input value="{{old('join-email')}}" type="email" class="form-control shadow-sm" name="join-email"
-               placeholder="Email" required>
+<form class="mb-3" method="post" action="{{route('auth.register')}}">
+    <div class="field">
+        <label class="label" for="join-email">Email:</label>
+        <div class="control">
+            <input value="{{old('join-email')}}" type="email" class="input shadow-sm" name="join-email"
+                   placeholder="Email" required>
+        </div>
     </div>
 
-    <div class="form-group">
-        <label for="join-password">Password:</label>
-        <input type="password" class="form-control shadow-sm" name="join-password" placeholder="Password" required>
+    <div class="field">
+        <label class="label" for="join-password">Password:</label>
+        <div class="control">
+            <input type="password" class="input shadow-sm" name="join-password" placeholder="Password" required>
+        </div>
     </div>
 
-    <div class="form-group">
-        <label for="join-name">Name:</label>
-        <input value="{{old('join-name')}}" type="text" class="form-control shadow-sm" name="join-name"
-               aria-describedby="joinName" placeholder="Name" required>
+    <div class="field">
+        <label class="label" for="join-name">Name:</label>
+        <div class="control">
+            <input value="{{old('join-name')}}" type="text" class="input shadow-sm" name="join-name"
+                   aria-describedby="joinName" placeholder="Name" required>
+        </div>
     </div>
 
-    <div class="text-center">
-        <button type="submit" class="btn btn-danger">
+    <div class="text-center mt-3">
+        <button type="submit" class="button is-danger">
             Register
         </button>
         <span class="ml-2 mr-2 text-muted">OR</span>
-        <a href="/?action=login" class="btn btn-secondary">
+        <a href="/?action=login" class="button is-dark">
             Login
         </a>
     </div>

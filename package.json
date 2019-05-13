@@ -14,7 +14,14 @@
   "license": "ISC",
   "dependencies": {
     "@trapcode/xjs": "^0.0.83",
+    "bulma": "^0.7.4",
     "dotenv": "^8.0.0",
     "express-edge": "^1.0.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "sass": "^1.20.1",
+    "sass-loader": "7.*",
+    "vue-template-compiler": "^2.6.10"
   }
 }

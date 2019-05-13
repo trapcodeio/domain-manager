@@ -1,24 +1,28 @@
 <form class="mb-3" method="post" action="{{route('auth.login')}}">
-    <div class="form-group">
-        <label for="login-email">Email</label>
-        <input type="email" class="form-control shadow-sm"
-               name="login-email"
-               id="login-email"
-               aria-describedby="loginEmail" placeholder="Email" required>
+    <div class="field">
+        <label class="label" for="login-email">Email</label>
+        <div class="control">
+            <input type="email" class="input shadow-sm"
+                   name="login-email"
+                   id="login-email"
+                   aria-describedby="loginEmail" placeholder="Email" required>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="login-password">Password</label>
-        <input type="password" class="form-control shadow-sm"
-               name="login-password"
-               id="login-password"
-               placeholder="Password" required>
+    <div class="field">
+        <label class="label" for="login-password">Password</label>
+        <div class="control">
+            <input type="password" class="input shadow-sm"
+                   name="login-password"
+                   id="login-password"
+                   placeholder="Password" required>
+        </div>
     </div>
     <div class="text-center">
-        <button type="submit" class="btn btn-danger">
+        <button type="submit" class="button is-danger">
             Login
         </button>
-        <span class="ml-2 mr-2 text-muted">OR</span>
-        <a href="/?action=register" class="btn btn-secondary">
+        <span class="ml-2 mr-2 has-text-grey">OR</span>
+        <a href="/?action=register" class="button is-dark">
             Register
         </a>
     </div>

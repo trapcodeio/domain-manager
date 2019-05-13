@@ -1,15 +1,14 @@
 @layout('master')
 @section('content')
-<div class="row">
-    <div class="col-12 col-lg-8 offset-lg-2">
-        <div class="card shadow">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 col-md-5 p-3 text-center align-middle">
-                        <h1 class="brand">X<span class="text-danger">js</span></h1>
-                    </div>
-                    <div class="col-12 col-md-6 p-3">
-                        <h5 class="text-muted text-uppercase">{{action}}</h5>
+    <div class="columns">
+        <div class="column is-8-tablet is-offset-2-tablet">
+            <div class="has-text-centered mb-3">
+                <h1 class="is-size-3 is-size-2-desktop">{{config('name')}}</h1>
+            </div>
+            <div class="box shadow-sm">
+                <div class="columns">
+                    <div class="column is-4-desktop is-6-tablet is-offset-3-tablet is-offset-4-desktop">
+                        <h3 class="m-0 is-size-4 is-uppercase has-text-danger">{{action}}</h3>
                         <hr class="mt-1 border-danger">
 
                         @include('partials/alerts')
@@ -24,5 +23,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
