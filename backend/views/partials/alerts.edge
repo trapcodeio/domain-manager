@@ -1,25 +1,25 @@
 @if(__flash.logout)
-    <div class="alert alert-success" role="alert">
+    <div class="notification is-success p-2" role="notification">
         {{ __flash.logout }}
     </div>
 @endif
 @if(__flash.login)
-    <div class="alert alert-success mt-2" role="alert">
+    <div class="notification is-success mt-2 p-2" role="notification">
         {{ __flash.login }}
     </div>
 @endif
 @if(__flash.login_error)
-    <div class="alert alert-danger" role="alert">
+    <div class="notification is-danger p-2" role="notification">
         {{ __flash.login_error }}
     </div>
 @endif
 @if(__flash.reg_success)
-    <div class="alert alert-success" role="alert">
+    <div class="notification is-success p-2" role="notification">
         {{ __flash.reg_success }}
     </div>
 @endif
 @if(__flash.reg_error)
-    <div class="alert alert-danger" role="alert">
+    <div class="notification is-danger p-2" role="notification">
         {{ __flash.reg_error }}
     </div>
 @endif

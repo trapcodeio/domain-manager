@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
 </head>
 <body>
-<section id="xVueContainer" class="section">
+<section id="app" class="section">
     <div class="container">
         @!section('content')
     </div>
 </section>
+
+@if(user)
+    @include('--routes')
+    <script src="{{mix('js/bundle.js')}}"></script>
+    <script src="{{mix('js/app.js')}}"></script>
+@endif
 </body>
 </html>

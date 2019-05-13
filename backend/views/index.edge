@@ -1,25 +1,22 @@
 @layout('master')
 @section('content')
     <div class="columns">
-        <div class="column is-8-tablet is-offset-2-tablet">
+        <div class="column is-6-tablet is-offset-3-tablet is-4-fullhd is-offset-4-fullhd">
             <div class="has-text-centered mb-3">
-                <h1 class="is-size-3 is-size-2-desktop">{{config('name')}}</h1>
+                <h1 class="is-size-3 is-size-2-desktop is-size-1-fullhd">{{config('name')}}</h1>
             </div>
-            <div class="box shadow-sm">
-                <div class="columns">
-                    <div class="column is-4-desktop is-6-tablet is-offset-3-tablet is-offset-4-desktop">
-                        <h3 class="m-0 is-size-4 is-uppercase has-text-danger">{{action}}</h3>
-                        <hr class="mt-1 border-danger">
+            <div class="box shadow-sm has">
 
-                        @include('partials/alerts')
+                <h3 class="m-0 is-size-4 is-uppercase has-text-danger">{{action}}</h3>
+                <hr class="mt-1 border-danger">
 
-                        @if(action === 'login')
-                            @include('inc.login')
-                        @else
-                            @include('inc.register')
-                        @endif
-                    </div>
-                </div>
+                @include('partials/alerts')
+
+                @if(action === 'login')
+                    @include('inc.login')
+                @else
+                    @include('inc.register')
+                @endif
             </div>
         </div>
     </div>
