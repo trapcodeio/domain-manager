@@ -7,13 +7,9 @@
 <script>
     import NavBar from './inc/NavBar';
 
-    export default window.useVTP({
+    export default window.vtpBuilder({
         vtp: {},
 
-        components: {NavBar},
-
-        mounted() {
-            console.log('From APp.vue');
-        }
+        components: {NavBar}
     });
 </script>

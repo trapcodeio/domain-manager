@@ -22,6 +22,9 @@
 
 @if(user)
     @include('--routes')
+    <script>
+        window['--appData'] = '{{{appData}}}';
+    </script>
     <script src="{{mix('js/bundle.js')}}"></script>
     <script src="{{mix('js/app.js')}}"></script>
 @endif

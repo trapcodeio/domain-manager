@@ -3,10 +3,11 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo-white.png" width="112" height="28">
+                    <h1 class="is-size-4">DomainManager</h1>
                 </a>
 
-                <a @click.prevent="toggleMenu" role="button" :class="burgerClass" aria-label="menu" aria-expanded="false"
+                <a @click.prevent="toggleMenu" role="button" :class="burgerClass" aria-label="menu"
+                   aria-expanded="false"
                    data-target="MainNavBar">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>

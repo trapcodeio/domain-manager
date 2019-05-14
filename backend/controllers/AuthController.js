@@ -1,13 +1,27 @@
 let xAuthController = $.engine('backend/controllers/AuthController', true);
 
 class AuthController extends xAuthController {
-    // Your Functions Here!
     dashboard(x) {
+        // Get Current Auth User
         const user = x.authUser();
 
-        return x.renderView('dashboard', {
-            userJson: JSON.stringify(user, null, 2)
+        // Set Data for vue to use.
+        const appData = $.base64.encode({
+
+            app: {
+                env: $.env('NODE_ENV'),
+
+                url: $.helpers.url(),
+
+                name: $.helpers.config('name'),
+            },
+
+            user: user.jsJson()
+
         });
+
+        // Render Dashboard and send appData
+        return x.renderView('dashboard', {appData});
     }
 }
 
