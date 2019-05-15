@@ -1,9 +1,9 @@
 html, body {
   height: 100%;
-}
-
-body {
-  background-color: darken(#FAFAFA, 2%);
+  width: 100%;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  background-color: darken(#FAFAFA, 2%)
 }
 
 .app {

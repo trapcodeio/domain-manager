@@ -22,12 +22,12 @@
                     </a>
 
                     <a class="navbar-item">
-                        Account
+                        Settings
                     </a>
 
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">
-                            More
+                            {{user.name}}
                         </a>
 
                         <div class="navbar-dropdown">
@@ -42,7 +42,7 @@
                             </a>
                             <hr class="navbar-divider">
                             <a class="navbar-item">
-                                Report an issue
+                                logout
                             </a>
                         </div>
                     </div>

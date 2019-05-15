@@ -1,9 +1,11 @@
-import Layout from '../vues/Layout';
+import router from './router';
+import Layout from './Layout';
 
 // For AutoComplete Sake
 const Vue = window.Vue;
 
 const Main = {
+    router,
     render: h => h(Layout)
 };
 

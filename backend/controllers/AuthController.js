@@ -1,7 +1,15 @@
-let xAuthController = $.engine('backend/controllers/AuthController', true);
+let xAuthController = require('@trapcode/xjs/engines/backend/controllers/AuthController');
 
 class AuthController extends xAuthController {
-    dashboard(x) {
+
+    static middleware() {
+        return {
+            'auth.logged': 'dashboard',
+            'auth.guest': ['index', 'login', 'register']
+        }
+    }
+
+    static dashboard(x) {
         // Get Current Auth User
         const user = x.authUser();
 
@@ -22,6 +30,14 @@ class AuthController extends xAuthController {
 
         // Render Dashboard and send appData
         return x.renderView('dashboard', {appData});
+    }
+
+    static vue(x){
+        if(!x.isLogged()){
+            return x.redirectToRoute('index');
+        }
+
+        return AuthController.dashboard(x);
     }
 }
 
