@@ -1,0 +1,5 @@
+{
+  "middlewares": {
+    "Auth": "npm://@xpresser/auth/Middlewares/Auth"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "npm://@xpresser/auth": {
+    "migrations": {
+      "20190208064039_create_user_table.js": "20190208064039_create_user_table"
+    },
+    "models": {
+      "User.js": "Auth/User.js"
+    }
+  }
+}

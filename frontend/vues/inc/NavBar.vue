@@ -41,7 +41,7 @@
                                 Contact
                             </a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item">
+                            <a :href="$api.route('auth.logout')" class="navbar-item">
                                 logout
                             </a>
                         </div>

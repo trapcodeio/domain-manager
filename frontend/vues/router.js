@@ -1,5 +1,6 @@
 import Domains from './pages/Domains';
 import Settings from './pages/Settings';
+import PageNotFound from './pages/404';
 
 const RouterViewComponent = {
     template: '<router-view></router-view>'
@@ -8,11 +9,11 @@ const RouterViewComponent = {
 
 export default new window.VueRouter({
     mode: 'history',
-    base: '/',
+    base: '/app',
     linkActiveClass: 'is-active',
     routes: [
         {
-            path: '/dashboard',
+            path: '/',
             name: 'domains',
             component: Domains
         },
@@ -22,6 +23,12 @@ export default new window.VueRouter({
             name: 'settings',
             component: Settings
         },
+
+        {
+            path: '/*',
+            name: '404',
+            component: PageNotFound
+        }
 
         /*{
             path: '/users',

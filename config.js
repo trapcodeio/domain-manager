@@ -1,4 +1,5 @@
 require('dotenv').config();
+const edge = require('express-edge');
 
 module.exports = {
     name: 'DomainManager',
@@ -46,11 +47,16 @@ module.exports = {
     },
 
     auth: {
-        viewsFromEngine: false
+        afterLoginRoute: 'dashboard',
+        usingEjs: false,
+        views: {
+            index: 'index',
+            dashboard: 'dashboard'
+        }
     },
 
     template: {
-        use: 'express-edge',
+        use: edge,
         extension: 'edge'
     },
 };

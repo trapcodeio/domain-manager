@@ -5,10 +5,10 @@
         </p>
         <ul class="menu-list">
             <li>
-                <router-link :to="rl('domains')">Domains</router-link>
+                <router-link :to="rl('domains')" exact>Domains</router-link>
             </li>
             <li>
-                <router-link :to="rl('settings')">Settings</router-link>
+                <router-link :to="rl('settings')" exact>Settings</router-link>
             </li>
         </ul>
         <p class="menu-label">
