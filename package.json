@@ -17,7 +17,7 @@
     "dotenv": "^8.0.0",
     "express-edge": "^1.0.0",
     "laravel-mix": "^4.0.15",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "xpresser": "^0.0.22"
   },
   "devDependencies": {
